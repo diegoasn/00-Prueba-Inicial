@@ -4,8 +4,8 @@ for line in fileinput.input():
 	line = line.replace('\n', '')
 	line = float(line)
 	lines.append(line)
-resultado = sum(lines)
-if resultado.is_integer() == True:
-	print(int(resultado))
+res = sum(lines)
+if res.is_integer() == True:
+	print(int(res))
 else:
-	print(resultado)
+	print(res)
