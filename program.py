@@ -1,10 +1,8 @@
 import fileinput
-lines = []
+res = 0
 for line in fileinput.input():
 	line = line.replace('\n', '')
-	line = float(line)
-	lines.append(line)
-res = sum(lines)
+	res += float(line)
 if res.is_integer() == True:
 	print(int(res))
 else:
